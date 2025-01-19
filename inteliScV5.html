@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为智慧屏 V5 Max</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+<button class="back-button">返回</button>
+
+<div class="container">
+    <!-- 产品展示区域 -->
+    <div class="product-display">
+        <!-- 左侧图片滚动展示 -->
+        <div class="product-images">
+            <div class="image-carousel">
+                <img src="../images/inteliScV5/A.png">
+                <img src="../images/inteliScV5/B.jpg">
+                <img src="../images/inteliScV5/C.jpg">
+                <img src="../images/inteliScV5/D.webp">
+                <!-- 更多图片 -->
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- 右侧产品配置区域 -->
+        <div class="product-config">
+            <h2>华为智慧屏 V5 Max 110英寸 华为黑钻屏 灵犀指向遥控 4K超高清智能护眼巨幕影院</h2>
+
+            <h3>华为黑钻屏，灵犀指向遥控，HUAWEI SOUND 空间音频</h3><br>
+
+            <body>
+            <h2>保障服务</h2>
+            <div class="options-container" id="color-options">
+                <div class="option" id="color-black">智慧屏全质保4年</div>
+                <div class="option" id="color-white">智慧屏全质保5年
+                </div>
+                <div class="option" id="color-green">智慧屏全质保3年</div>
+            </div>
+            <h2>版本</h2>
+            <div class="options-container" id="version-options">
+                <div class="option" id="12256" onclick="updatePrice(9999)">75"｜V5 SuperMiniLED鸿鹄</div>
+                <div class="option" id="12512" onclick="updatePrice(24999)">98"｜V5 SuperMiniLED鸿鹄</div>
+                <div class="option" id="121024" onclick="updatePrice(64999)">110"｜V5 Max 华为黑钻屏</div>
+            </div>
+
+            <div id="price">价格：请选择配置</div>
+        </div>
+    </div>
+</div>
+
+<!-- 产品参数区域 -->
+<div class="product-details">
+    <h2>产品参数</h2>
+    <div class="main-section">
+        <h3>主体</h3>
+        <div class="parameter-row">
+            <div class="parameter-label">品牌</div>
+            <div class="parameter-value">华为</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">系列</div>
+            <div class="parameter-value">智慧屏V系列</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">传播名</div>
+            <div class="parameter-value">华为智慧屏 V5 Max 110</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">操作系统</div>
+            <div class="parameter-value">HarmonyOS 4</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">CPU核数</div>
+            <div class="parameter-value">8核 8×Cortex A73</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">CPU主频</div>
+            <div class="parameter-value">1.8G</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">GPU</div>
+            <div class="parameter-value">G52 MC6</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">CPU制程</div>
+            <div class="parameter-value">
+                12nm
+            </div>
+    </div>
+
+    <div class="main-section">
+        <h3>外观</h3>
+        <div class="parameter-row">
+            <div class="parameter-label">结构设计</div>
+            <div class="parameter-value">一体式</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">外观颜色</div>
+            <div class="parameter-value">深空灰</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">边框材质</div>
+            <div class="parameter-value">铝合金</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">后盖材质</div>
+            <div class="parameter-value">塑料</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">底座材质</div>
+            <div class="parameter-value">金属</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">机身厚薄</div>
+            <div class="parameter-value">最薄处：23.7mm，最厚处：69mm441 PPI</div>
+        </div>
+    </div>
+
+    <div class="main-section">
+        <h3>屏幕</h3>
+        <div class="parameter-row">
+            <div class="parameter-label">屏幕尺寸</div>
+            <div class="parameter-value">110英寸</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">分辨率</div>
+            <div class="parameter-value">超高清4K（3840×2160 像素）</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">屏幕色彩</div>
+            <div class="parameter-value">10.7亿色</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">屏幕类型</div>
+            <div class="parameter-value">Mini LED</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">可视角度</div>
+            <div class="parameter-value">178°</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">刷新率</div>
+            <div class="parameter-value">120Hz</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">屏占比</div>
+            <div class="parameter-value">98.6%</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">屏幕长宽比</div>
+            <div class="parameter-value">16:9</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">背光模式</div>
+            <div class="parameter-value">直下式</div>
+        </div>
+    </div>
+
+    <div class="main-section">
+        <h3>存储</h3>
+        <div class="parameter-row">
+            <div class="parameter-label">运行内存（RAM）</div>
+            <div class="parameter-value">6GB</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">机身内存（ROM））</div>
+            <div class="parameter-value">128GB</div>
+        </div>
+    </div>
+
+
+    <div class="main-section">
+        <h3>娱乐功能</h3>
+        <div class="parameter-row">
+            <div class="parameter-label">音效</div>
+            <div class="parameter-value">HUAWEI SOUND音效技术</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">视频解码</div>
+            <div class="parameter-value">H.265/H.264/MPEG4等</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">视频文件格式</div>
+            <div class="parameter-value">AVI/MP4/MOV/MKV等</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">音频解码</div>
+            <div class="parameter-value">MP3/AAC等</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">音频文件格式</div>
+            <div class="parameter-value">MP3/MP4/3GP等</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">图片格式</div>
+            <div class="parameter-value">PNG/JPG/BMP等</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">独立音效芯片</div>
+            <div class="parameter-value">数字音频PA芯片</div>
+        </div>
+        <div class="parameter-row">
+            <div class="parameter-label">扬声器数量</div>
+            <div class="parameter-value">5个碳纤维双驱全频单元 3个天然蚕丝振膜球顶高频单元 1个差分悬挂超薄低频单元 2个无源辐射器</div>
+        </div>
+    </div>
+
+        <div class="main-section">
+            <h3>传输功能</h3>
+            <div class="parameter-row">
+                <div class="parameter-label">WLAN</div>
+                <div class="parameter-value">支持</div>
+            </div>
+            <div class="parameter-row">
+                <div class="parameter-label">DLNA</div>
+                <div class="parameter-value">支持</div>
+            </div>
+            <div class="parameter-row">
+                <div class="parameter-label">蓝牙</div>
+                <div class="parameter-value">蓝牙 5.1</div>
+            </div>
+            <div class="parameter-row">
+                <div class="parameter-label">蓝牙音乐</div>
+                <div class="parameter-value">AAC/SBC</div>
+            </div>
+            <div class="parameter-row">
+                <div class="parameter-label">遥控器协议</div>
+                <div class="parameter-value">低功耗蓝牙</div>
+            </div>
+            <div class="parameter-row">
+                <div class="parameter-label">WLAN 频率</div>
+                <div class="parameter-value">2.4GHz/5GHz</div>
+            </div>
+        </div>
+</div>
+
+
+
+
+<script src="../js/product.js"></script>
+</body>
+</html>

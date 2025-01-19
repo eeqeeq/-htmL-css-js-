@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 黑色导航 start */
+.black-nav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.black-nav .wrap .black-nav-left {
+    float: left;
+}
+
+.hidden {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.back-button {
+    position: absolute; /* 使按钮绝对定位 */
+    top: 10px; /* 距离顶部一定距离 */
+    left: 10px; /* 距离左侧一定距离 */
+    background-color: #333; /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    border: none;
+    padding: 8px 16px; /* 按钮内边距 */
+    font-size: 10px;
+    cursor: pointer;
+    /*border-radius: 5px;  按钮圆角 */
+    z-index: 100; /* 确保按钮位于其他元素之上 */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* 悬浮时的背景颜色 */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-display {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 200px;
+    padding-top: 30px; /* 给主体部分增加一点下边距 */
+    padding-bottom: 20px; /* 给主体部分增加一点下边距 */
+    border-bottom: 2px solid #ddd; /* 给主体部分加下边缘线 */
+}
+
+.product-images {
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;        /* 水平居中 */
+    align-items: center;
+}
+
+.image-carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.image-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.product-config h1 {
+    color: darkslategray;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.product-config h2 {
+    color: black;
+    font-size: 22px;
+}
+
+.product-config h3 {
+    color: black;
+    font-size: small;
+    font-weight: normal;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option {
+    display: inline-block;
+    width: 35%;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option:active {
+    background-color: #e0e0e0;
+}
+
+.selected {
+    border-color: red;
+}
+
+#price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-details {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section {
+    width: 100%;
+    padding-bottom: 20px; /* 给主体部分增加一点下边距 */
+    border-bottom: 2px solid #ddd; /* 给主体部分加下边缘线 */
+    margin-bottom: 20px; /* 主体部分和其他部分之间的间距 */
+}
+
+.other-sections {
+    width: 100%;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 0; /* 每行上下的内边距 */
+}
+
+.parameter-label {
+    font-weight: bold;
+    width: 30%; /* 设置标签部分的宽度 */
+    text-align: left; /* 标签左对齐 */
+}
+
+.parameter-value {
+    width: 65%; /* 设置值部分的宽度 */
+    text-align: left; /* 值左对齐 */
+    word-wrap: break-word; /* 自动换行 */
+}
+
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .product-display {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-images,
+    .product-config {
+        width: 100%;
+    }
+
+    .option {
+        width: 100%;
+    }
+}
